@@ -6,6 +6,10 @@ body{
 .container {
     /* only using below line , grid display will not work */
     display: grid; 
+    /* no. of auto that we write tells browser to keep that no. of 
+       columns with equal width. for example below case we are 
+       creating 3 column and remaining column will go to below rows.
+    */
     grid-template-columns: auto auto auto;
 }
 
