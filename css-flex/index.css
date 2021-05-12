@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(43, 40, 40);
+    color: blanchedalmond;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.item {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(204, 145, 69);
+    border: 2px solid red;
+    margin: 2px;
+}
