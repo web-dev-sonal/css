@@ -23,7 +23,7 @@ body{
     /* create 0 rows explicitly , any row will be implicitly generated
        and their size will be determined by grid-auto-rows: ; property*/
     /* grid-template-rows: none; */
-    grid-auto-rows: auto;
+    grid-auto-rows: minmax(100,auto);
 
     /* "dense" packing algorithm attempts to fill in holes earlier in the grid, 
      if smaller items come up later */
@@ -36,5 +36,7 @@ body{
     height: 200px;
     width: 200px;
     border: 2px solid black;
+    /* grid-column-start: 2; */
+    /* grid-column-end: 4; */
     /* overflow: scroll; */
 }
