@@ -6,7 +6,7 @@ body{
 .container {
     /* only using below line , grid display will not work */
     display: grid; 
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
 }
 
 .item {
