@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(32, 31, 31);
+    color: blanchedalmond;
+}
+
+.container {
+    /* only using below line , grid display will not work */
+    display: grid; 
+    
+}
+
+.item {
+    margin: 5px auto;
+    background-color: rgb(212, 67, 152);
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+}
