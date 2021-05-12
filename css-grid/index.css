@@ -11,6 +11,23 @@ body{
        creating 3 column and remaining column will go to below rows.
     */
     grid-template-columns: auto auto auto;
+    margin: 5px;
+    /* this below example i took for showing if i decrease the row height 
+        height to less  than item height than iten will overflow if no any
+        other property is added, we can show this by inspecting our 
+        html web page. overflowed item overlap with next rows item so 
+        always put height or wodth of row or column greater than item.
+    */
+    /* create 3 rows explicitly each with specified width */
+    grid-template-rows: auto auto auto;  
+    /* create 0 rows explicitly , any row will be implicitly generated
+       and their size will be determined by grid-auto-rows: ; property*/
+    /* grid-template-rows: none; */
+    grid-auto-rows: auto;
+
+    /* "dense" packing algorithm attempts to fill in holes earlier in the grid, 
+     if smaller items come up later */
+    grid-auto-flow: row dense;
 }
 
 .item {
@@ -19,4 +36,5 @@ body{
     height: 200px;
     width: 200px;
     border: 2px solid black;
+    /* overflow: scroll; */
 }
