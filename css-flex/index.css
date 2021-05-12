@@ -5,9 +5,19 @@ body {
 }
 
 .container {
+    /* by just adding this , we se=aw when we reduced the width of screen
+       then width of all item get reduced but no any item overflowed
+       outside the screen
+    */
     display: flex;
     /* flex-direction: column-reverse; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: /*flex-end*/ /*center */ space-between;
+    align-items: /*center*/ /*flex-start*/ stretch;
+    height: 800px;
+    background-color: rgb(156, 155, 148);
+    align-items: baseline;
 }
 
 .item {
@@ -16,4 +26,7 @@ body {
     background-color: rgb(204, 145, 69);
     border: 2px solid red;
     margin: 2px;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
 }
